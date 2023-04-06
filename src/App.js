@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import StartPage from "./pages/StartPage";
 import ScrollToTop from "./components/ScrollToTop";
+import HomePage from "./pages//HomePage";
 
 const APP_ID = "1241926";
 const API_KEY = "x2u4y9padhyg";
@@ -37,6 +38,7 @@ export default function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<StartPage />} />
+          <Route path="/home" element={<HomePage />} />
         </Routes>
       </Router>
     </StreamApp>
