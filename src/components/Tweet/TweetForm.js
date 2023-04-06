@@ -193,8 +193,6 @@ export default function TweetForm({
 
   const user = client.currentUser.data;
 
-  console.log("client.currentUser: ", client.currentUser);
-
   const MAX_CHARS = 280;
 
   const percentage =
