@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { formatStringWithLink } from "../../utils/string";
+import { formatStringWithLink } from "../../utils/strings";
 import Modal from "../Modal";
 import TweetActorName from "./TweetActorName";
 import TweetForm from "./TweetForm";

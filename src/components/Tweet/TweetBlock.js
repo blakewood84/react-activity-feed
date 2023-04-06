@@ -4,7 +4,7 @@ import { useStreamContext } from "react-activity-feed";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-import { formatStringWithLink } from "../../utils/string";
+import { formatStringWithLink } from "../../utils/strings";
 import CommentDialog from "./CommentDialog";
 import Comment from "../Icons/Comment";
 import Heart from "../Icons/Heart";
@@ -157,7 +157,7 @@ export default function TweetBlock({ activity }) {
 
   return (
     <>
-      <BlocK>
+      <Block>
         <div className="user-image">
           <img src={actor.data.image} alt="" />
         </div>
@@ -214,7 +214,7 @@ export default function TweetBlock({ activity }) {
         <button className="more">
           <More color="#777" size={20} />
         </button>
-      </BlocK>
+      </Block>
       {activity.id && commentDialogOpened && (
         <CommentDialog
           onPostComment={onPostComment}

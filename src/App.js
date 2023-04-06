@@ -15,7 +15,8 @@ const API_KEY = "x2u4y9padhyg";
 
 export default function App() {
   const userId = getFromStorage("user");
-  const user = users.find((u) => u.id === userId || users[0]);
+
+  const user = users.find((u) => u.id === userId ?? users[0]);
 
   const [client, setClient] = useState(null);
 
